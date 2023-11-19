@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "push-all-master": "git push gitlab master && git push github master",
+    "push-all-karma": "git push gitlab signal-karma && git push github signal-karma",
+    "push-all-jest": "git push gitlab signal-jest && git push github signal-jest"
   },
   "private": true,
   "dependencies": {
