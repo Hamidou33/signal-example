@@ -36,4 +36,8 @@ export class CardComponent {
     this.itemList.set(this.itemList().concat([{...itemAdded}]));
     console.log('les items',  this.itemList());
   }
+
+  resetItem(): void {
+    this.itemList.set([]);
+  }
 }

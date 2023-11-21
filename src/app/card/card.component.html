@@ -1,7 +1,13 @@
-<ul>
-  <li *ngFor="let item of items">
-    {{item.name}} - ${{item.price}}
-    <button (click)="addItem(item)">Add</button>
-  </li>
-</ul>
-Total Price: ${{totalPrice()}}
+<h1 class="center">How to use Signal</h1>
+<div class="center">
+  <ul>
+    <li *ngFor="let item of items">
+      {{item.name}} - ${{item.price}}
+      <button (click)="addItem(item)">Add</button>
+    </li>
+  </ul>
+  Total Price: ${{totalPrice()}}
+  <div class="mt">
+    <button (click)="resetItem()">Reset</button>
+  </div>
+</div>

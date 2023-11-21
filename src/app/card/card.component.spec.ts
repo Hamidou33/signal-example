@@ -38,4 +38,9 @@ describe('CardComponent', () => {
     expect(totalPrice).toBe(expectedTotalPrice);
   });
 
+  it('should reset itemList correctly', () => {
+    component.resetItem();
+    expect(component.itemList()).toEqual([]);
+  });
+
 });
